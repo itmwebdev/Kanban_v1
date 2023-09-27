@@ -1,13 +1,6 @@
 import type { PropsWithChildren } from 'react'
+import { DashboardLayout } from '@/components/dashboard-layout/DashboardLayout'
 
 export default function Layout({ children }: PropsWithChildren<unknown>) {
-    return (
-        <div>
-            <div>
-                Sidebar
-            </div>
-
-            <main>{children}</main>
-        </div>
-    )
+    return  <DashboardLayout>{children}</DashboardLayout>
 }
